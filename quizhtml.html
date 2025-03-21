@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Quiz de Informática para Concurso</title>
+
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .question { margin-bottom: 15px; }
+        .result { font-weight: bold; margin-top: 10px; }
+        .correct-answer { color: green; font-weight: bold; display: none; }
+        .incorrect { color: red; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h2>Quiz de Informática para Concurso Federal</h2>
+    <h4>Aprenda um pouco com a <i>Layane Melo</i>> </h4>
+    <form id="quizForm">
+        <div class="question">
+            <p>1. Qual é a função principal do sistema operacional?</p>
+            <input type="radio" name="q1" value="errado"> Gerenciar somente o hardware<br>
+            <input type="radio" name="q1" value="certo"> Gerenciar hardware e software <span class="correct-answer">(Correto)</span><br>
+            <input type="radio" name="q1" value="errado"> Somente executar programas de usuário<br>
+            <input type="radio" name="q1" value="errado"> Apenas controlar os dispositivos de entrada e saída<br>
+            <input type="radio" name="q1" value="errado"> Executar apenas processos administrativos<br>
+        </div>
+        <div class="question">
+            <p>2. Qual é a unidade básica de armazenamento de dados em um computador?</p>
+            <input type="radio" name="q2" value="errado"> Byte<br>
+            <input type="radio" name="q2" value="certo"> Bit <span class="correct-answer">(Correto)</span><br>
+            <input type="radio" name="q2" value="errado"> KB<br>
+            <input type="radio" name="q2" value="errado"> MB<br>
+            <input type="radio" name="q2" value="errado"> GB<br>
+        </div>
+        <div class="question">
+            <p>3. Qual protocolo é usado para transferir páginas da web?</p>
+            <input type="radio" name="q3" value="certo"> HTTP <span class="correct-answer">(Correto)</span><br>
+            <input type="radio" name="q3" value="errado"> FTP<br>
+            <input type="radio" name="q3" value="errado"> SMTP<br>
+            <input type="radio" name="q3" value="errado"> POP3<br>
+            <input type="radio" name="q3" value="errado"> SNMP<br>
+        </div>
+        <div class="question">
+            <p>4. Qual software é utilizado para navegação na internet?</p>
+            <input type="radio" name="q4" value="errado"> Windows Explorer<br>
+            <input type="radio" name="q4" value="errado"> Paint<br>
+            <input type="radio" name="q4" value="certo"> Navegador Web <span class="correct-answer">(Correto)</span><br>
+            <input type="radio" name="q4" value="errado"> Bloco de Notas<br>
+            <input type="radio" name="q4" value="errado"> Gerenciador de Tarefas<br>
+        </div>
+        <div class="question">
+            <p>5. O que significa a sigla CPU?</p>
+            <input type="radio" name="q5" value="certo"> Central Processing Unit <span class="correct-answer">(Correto)</span><br>
+            <input type="radio" name="q5" value="errado"> Control Processing Unit<br>
+            <input type="radio" name="q5" value="errado"> Central Power Unit<br>
+            <input type="radio" name="q5" value="errado"> Core Processing Unit<br>
+            <input type="radio" name="q5" value="errado"> Central Program Unit<br>
+        </div>
+        
+        <div class="question">
+            <p>6. Qual é a função da tecla F4 no Excel? </p>
+            <input type="radio" name="q6" value="certo"> Editar a célula selecionada <br>
+            <input type="radio" name="q6" value="errado"> Aplicar a formatação de moeda <br>
+            <input type="radio" name="q6" value="errado"> Repetir a última ação <span class="correct-answer">(Correto)</span><br>
+            <input type="radio" name="q6" value="errado"> Salvar a planilha<br>
+            <input type="radio" name="q6" value="errado"> Abrir novo arquivo<br>
+        </div>
+        
+        <div class="question">
+            <p>7. Qual é a tecla de atalho para abrir um novo documento no Microsoft Word? </p>
+            <input type="radio" name="q7" value="certo"> Ctrl + O <br>
+            <input type="radio" name="q7" value="errado"> Ctrl + N <span class="correct-answer">(Correto)</span><br>
+            <input type="radio" name="q7" value="errado"> Ctrl + S <br>
+            <input type="radio" name="q7" value="errado"> Ctrl + P<br>
+            <input type="radio" name="q7" value="errado"> Ctrl + V<br>
+        </div>
+        <div class="question">
+            <p>8. Qual é a função da tecla “Ctrl + Shift + Esc” no Windows? </p>
+            <input type="radio" name="q8" value="certo">    <br>
+            <input type="radio" name="q8" value="errado"> Abrir o Gerenciador de Tarefas <span class="correct-answer">(Correto)</span><br>
+            <input type="radio" name="q8" value="errado"> Maximizar todas as janelas <br>
+            <input type="radio" name="q8" value="errado"> Fechar todas as janelas <br>
+            <input type="radio" name="q8" value="errado"> Abrir a pesquisa do Windows <br>
+        </div
+        <div class="question">
+            <p>9. Qual comando no Windows é utilizado para abrir o prompt de comando? </p>
+            <input type="radio" name="q9" value="certo"> Win + R <span class="correct-answer">(Correto)</span><br>
+            <input type="radio" name="q9" value="errado"> Ctrl + Alt + Del <br>
+            <input type="radio" name="q9" value="errado"> Win + X <br>
+            <input type="radio" name="q9" value="errado"> Win + C <br>
+            <input type="radio" name="q9" value="errado"> Win + S <br>
+        </div>
+        <div class="question">
+            <p>10. Qual é o protocolo utilizado para envio de e-mails na Internet? </p>
+            <input type="radio" name="q10" value="certo">  FTP <br>
+            <input type="radio" name="q10"" value="errado"> HTTP <br>
+            <input type="radio" name="q10" value="errado"> SMTP <span class="correct-answer">(Correto)</span><br>
+            <input type="radio" name="q10" value="errado"> IMAP<br>
+            <input type="radio" name="q10" value="errado"> HTML<br>
+        </div>
+        <div class="question">
+            <p>11. Qual é o principal objetivo de um firewall? </p>
+            <input type="radio" name="q11" value="certo"> Monitorar o tráfego de rede <br>
+            <input type="radio" name="q11" value="errado"> Proteger a rede contra acessos não autorizados <span class="correct-answer">(Correto)</span><br>
+            <input type="radio" name="q11" value="errado"> Aumentar a velocidade de navegação na internet  <br>
+            <input type="radio" name="q11" value="errado"> Diminuir os riscos de rastreamento <br>
+            <input type="radio" name="q11" value="errado"> Abrir novo arquivo<br>
+        </div>
+        <div class="question">
+            <p>12. Qual é a função da memória RAM em um computador? </p>
+            <input type="radio" name="q12" value="certo"> Armazenar dados permanentemente <br>
+            <input type="radio" name="q12" value="errado"> Controlar a comunicação entre os componentes <br>
+            <input type="radio" name="q12" value="errado"> Processar informações e cálculos <br>
+            <input type="radio" name="q12" value="errado"> Proteção contra perca de dados a longo prazo <br>
+            <input type="radio" name="q12" value="errado"> Armazenar dados temporariamente enquanto o computador está em uso <span class="correct-answer">(Correto)</span><br>
+        </div>
+        <div class="question">
+            <p>13. Qual função do Excel é utilizada para somar um intervalo de células? </p>
+            <input type="radio" name="q13" value="certo"> =SOMA() <span class="correct-answer">(Correto)</span><br>
+            <input type="radio" name="q13" value="errado"> =MÉDIA() <br>
+            <input type="radio" name="q13" value="errado"> =MÍNIMO() <br>
+            <input type="radio" name="q13" value="errado"> =MÁXIMO() <br>
+            <input type="radio" name="q13 value="errado"> =SOMARPRODUTO <br>
+        </div>
+        <div class="question">
+            <p>14. Qual é a tecla de atalho para minimizar todas as janelas no Windows 10? </p>
+            <input type="radio" name="q14" value="certo"> Win + D <br>
+            <input type="radio" name="q14" value="errado"> Win + M <span class="correct-answer">(Correto)</span><br>
+            <input type="radio" name="q14" value="errado"> Ctrl + M <br>
+            <input type="radio" name="q14" value="errado"> Alt + D <br>
+            <input type="radio" name="q14" value="errado"> Alt + M <br>
+        </div>
+        <div class="question">
+            <p>15. Qual é o componente responsável pelo armazenamento permanente de dados em um computador? </p>
+            <input type="radio" name="q15" value="certo"> Processador <br>
+            <input type="radio" name="q15" value="errado"> Memória RAM <br>
+            <input type="radio" name="q15" value="errado"> Disco rígido  <span class="correct-answer">(Correto)</span><br>
+            <input type="radio" name="q15" value="errado"> Placa-mãe <br>
+            <input type="radio" name="q15" value="errado">  CPU <br>
+        </div>
+        <div class="question">
+
+        <script>
+            function verificarRespostas() {
+                let acertos = 0;
+                const respostas = document.querySelectorAll('input[type="radio"]:checked');
+                respostas.forEach(resposta => {
+                    if (resposta.value === "certo") {
+                        acertos++;
+                    } else {
+                        resposta.parentNode.classList.add("incorrect");
+                    }
+                });
+                document.getElementById("resultado").textContent = "Você acertou " + acertos + " de " + 15 + " perguntas.";
+                
+                // Exibir respostas corretas após a finalização do quiz
+                setTimeout(() => {
+                    document.querySelectorAll(".correct-answer").forEach(el => el.style.display = "inline");
+                }, 500);
+            }
+        </script>
+        
+        <button type="button" onclick="verificarRespostas()">Verificar Respostas</button>
+    </form>
+    <p class="result" id="resultado"></p>
+</body>
+</html>
